@@ -148,8 +148,17 @@ textarea {
 .button220 {
 	width: 220px;
 }
-.button:hover {
+.button220:hover {
 	background: #E5006B;
+	border: 0px solid #FFFFFF;
+	cursor: pointer;
+}
+.button278 {
+	width: 278px;
+
+}
+.button278:hover {
+	background: #6087A4;
 	border: 0px solid #FFFFFF;
 	cursor: pointer;
 }
@@ -231,6 +240,7 @@ textarea {
 }
 .article {
 	padding: 32px 39px;
+	position: relative;
 }
 .article_appoint {
 	display: flex;
@@ -240,7 +250,7 @@ textarea {
 	margin-right: 17px;
 }
 .article_img {
-	margin-top: 9px;
+	margin-top: 5px;
 	display: flex;
 	display: -webkit-flex;
 	justify-content: center;
@@ -252,6 +262,7 @@ textarea {
 }
 .filters_article_slider {
 	display: flex;
+	display: -webkit-flex;
 }
 .article_caption h1 {
 	font-size: 24px;
@@ -265,4 +276,186 @@ textarea {
 	color: #666C6E;
 	opacity: 0.8;
 	margin-top: 17px;
+	max-height: 108px;
+}
+.article_wrap:hover {
+	box-shadow: 0px 4px 25px rgba(109, 110, 134, 0.25);
+}
+.article_wrap:hover .article_img {
+	position: absolute;
+	opacity: 0.2;
+}
+.article_wrap:hover .article_caption {
+	margin-top: 126px;
+}
+.article_button {
+	border: 1px solid #EDEDED;
+	color: #6087A4;
+	display: none;
+}
+.article_wrap:hover .article_button {
+	display: flex;
+	display: -webkit-flex;
+}
+.article_button:hover {
+	color: white;
+}
+.article_button_more {
+	margin-top: 32px;
+}
+.article_button_downloadPDF {
+	margin-top: 24px;
+}
+.diler_wrap {
+	margin-top: 112px;
+}
+.diler {
+	display: flex;
+	display: -webkit-flex;
+}
+.diler_img {
+	flex: 2.795;
+	background: url(img/main/cofee.jpg) no-repeat;
+	background-size: cover;
+	height: 691px;
+}
+.diler_content {
+	flex: 5;
+	height: 691px;
+	background: #F5B5C9;
+	display: flex;
+	display: -webkit-flex;
+}
+.diler_content_content {
+	margin-left: 112px;
+	margin-top: 102px;
+}
+.diler_content h1 {
+	font-family: 'Conv_FuturaDemiC';
+	font-size: 50px;
+	line-height: 58px;
+	color: #FFFFFF;
+}
+.diler_content_line {
+	margin-top: 28px;
+}
+.diler_content_text {
+	font-size: 22px;
+	line-height: 30px;
+	width: 552px;
+	height: 225px;
+	color: #FFFFFF;
+	margin-top: 30px;
+}
+.diler_content_text p {
+	margin-top: 15px;
+}
+.diler_content_button {
+	margin-top: 50px;
+}
+.diler_content_lines {
+	margin-left: auto;
+	margin-top: 197px;
+}
+.news_wrap {
+	margin-top: 76px;
+}
+.news {
+	display: flex;
+	display: -webkit-flex;
+}
+.news_caption h1 {
+	font-size: 50px;
+	line-height: 58px;
+	font-family: 'Conv_FuturaDemiC';
+	color: #666C6E;
+}
+.news_button {
+	font-family: 'Conv_FuturaBookC';
+	color: #666C6E;
+	border: 1px solid #EDEDED;
+	border-radius: 5px;
+	font-size: 16px;
+	line-height: 18px;
+	width: 200px;
+	height: 48px;
+	margin-top: 2px;
+	margin-right: 62px;
+}
+.news_button:hover {
+	background-color: #666C6E;
+	color: white;
+}
+.news_link {
+	margin-left: auto;
+	display: flex;
+	display: -webkit-flex;
+}
+.news_arrows {
+	display: flex;
+	display: -webkit-flex;
+	margin-top: 2px;
+}
+.news_arrows div {
+	width: 48px;
+	height: 48px;
+	background: #FFFFFF;
+	border: 1px solid #EDEDED;
+	box-sizing: border-box;
+	display: flex;
+	display: -webkit-flex;
+}
+.news_arrows .news_arrows_prev {
+	border-radius: 5px 0 0 5px;
+}
+.news_arrows .news_arrows_next {
+	border-radius: 0 5px 5px 0;
+}
+.news_arrows i {
+	margin: auto;
+	font-size: 24px;
+	opacity: 0.2;
+	color: #666C6E;
+}
+
+.news_arrows_prev:hover i,
+.news_arrows_next:hover i{
+	opacity: 1;
+	cursor: pointer;
+}
+.news_slide {
+	width: 358px;
+	margin-top: 43px;
+	margin-right: 30px;
+	outline: none;
+}
+.news_slide:focus {
+	outline: none;
+}
+.news_slide_data {
+	margin-top: 10px;
+	font-size: 18px;
+	line-height: 20px;
+	color: #666C6E;
+	opacity: 0.7;
+}
+.news_slide_img {
+	height: 230px;
+	margin-top: 25px;
+}
+.news_slide_caption {
+	font-size: 24px;
+	line-height: 30px;
+	color: #666C6E;
+	margin-top: 31px;
+}
+.news_slide_text {
+	margin-top: 16px;
+	font-size: 18px;
+	line-height: 27px;
+	color: #666C6E;
+	opacity: 0.7;
+}
+.slick-slide.slick-active {
+	outline: none;
 }
