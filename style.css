@@ -459,3 +459,149 @@ textarea {
 .slick-slide.slick-active {
 	outline: none;
 }
+.questions_wrap {
+	margin-top: 91px;
+	height: 606px;
+	display: flex;
+	display: -webkit-flex;
+}
+.questions_content_wrap {
+	flex: 1;
+	background: #F5B5C9;
+}
+.questions_img {
+	flex: 1;
+	background: url(img/main/questions.jpg) no-repeat;
+	background-size: cover;
+}
+.questions_caption {
+	margin-top: 90px;
+}
+.questions_caption h1 {
+	font-family: 'Conv_FuturaDemiC';
+	font-size: 50px;
+	line-height: 58px;
+	color: #FFFFFF;
+}
+.questions_caption p {
+	font-size: 22px;
+	line-height: 30px;
+	color: #FFFFFF;
+	margin-top: 11px;
+}
+.questions_form {
+	margin-top: 40px;
+}
+.questions_form .questions_consent {
+	background-color: #F5B5C9;
+	color: white;
+}
+.questions_checkbox_text {
+	font-size: 16px;
+	line-height: 27px;
+	color: #FFFFFF;
+	margin-left: 17px;
+	position: relative;
+	bottom: 3px;
+}
+.display_none {
+	display: none;
+}
+.questions_form label {
+	display: flex;
+	display: -webkit-flex;
+}
+.questions_content_position {
+	display: flex;
+	display: -webkit-flex;
+}
+.questions_content {
+	width: 455px;
+	margin-left: auto;
+	padding-right: 112px;
+}
+.questions_checkbox {
+	width: 20px;
+	height: 20px;
+	border: 1px solid #ffffff5c;
+	box-sizing: border-box;	
+	font-size: 12px;
+	color: transparent;
+	text-align: center;
+}
+.questions_form input[type="text"],
+.questions_form input[type="tel"] {
+	border: none;
+	border-bottom: 1px solid white;
+	background-color: #F5B5C9;
+	padding-bottom: 14px;
+	font-family: 'Conv_FuturaBookC';
+	font-size: 16px;
+	line-height: 18px;
+	color: white;
+	width: 214px;
+}
+.questions_form input::-moz-placeholder {
+	font-family: 'Conv_FuturaBookC';
+	font-size: 16px;
+	line-height: 18px;
+	color: white;	
+}
+.questions_form input::-webkit-input-placeholder {
+	font-family: 'Conv_FuturaBookC';
+	font-size: 16px;
+	line-height: 18px;
+	color: white;
+}
+.questions_consent:checked + label .questions_checkbox {
+	color: white;
+}
+.questions_tel {
+	margin-left: 22px;
+}
+.questions_form input[type="text"].questions_comment {
+	width: 455px;
+}
+.questions_comment {
+	margin-top: 35px;
+}
+.label_consent {
+	margin-top: 38px;
+}
+.questions_button {
+	width: 261px;
+	margin-top: 45px;
+}
+.footer_wrap {
+	background-color: #666C6E;
+}
+.footer_info {
+	height: 469px;
+	display: flex;
+	display: -webkit-flex;
+}
+.footer_info_filters {
+	flex: 1;
+}
+.footer_info_technologies {
+	flex: 1;
+}
+.footer_info_info {
+	flex: 1;
+}
+.footer_info_contacts {
+	flex: 1;
+}
+.footer_info_side {
+	font-family: 'Conv_FuturaBookC';
+	font-size: 18px;
+	line-height: 27px;
+	color: #FFFFFF;
+	opacity: 0.5;	
+}
+.footer_info_main {
+	font-family: 'Conv_FuturaBookC';
+	font-size: 24px;
+	line-height: 30px;
+	color: #FFFFFF;	
+}
