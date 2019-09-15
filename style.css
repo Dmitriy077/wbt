@@ -25,7 +25,9 @@ textarea {
 	box-sizing: border-box;
 	border: 0px solid black;
 }
-
+.flex {
+	display: flex;
+}
 .header_wrap_backgrond {
 	background: url(./img/main/shutterstock.jpg) no-repeat;
 	background-size: cover;
@@ -157,6 +159,7 @@ textarea {
 	border: 1px solid #FFFFFF;
 	justify-content: center;
 	font-family: 'Conv_FuturaDemiC';
+	cursor: pointer;
 }
 .button220 {
 	width: 220px;
@@ -747,9 +750,11 @@ textarea {
 .systemFiltered .header_nav_contacts_dealer a span {
 	color: #DDB0C8;
 }
-.wrap_systemFiltered .header_nav {
+.wrap_systemFiltered .header_nav,
+.productCard .header_nav  {
 	border-bottom: 1px solid #EDEDED;;
 }
+
 .systemFiltered .header_nav_contacts_phone {
 	border-right: 1px solid #EDEDED;
 }
@@ -765,7 +770,8 @@ textarea {
 .systemFiltered .filters {
 	margin-top: 30px;
 }
-.list_articles {
+.list_articles,
+.accessories_list {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 43px;
@@ -776,4 +782,146 @@ textarea {
 }
 .list_articles_margin:nth-child(3n) {
 	margin-right: 0;
+}
+.accessories_caption h1 {
+	font-family: 'Conv_FuturaDemiC';
+	font-size: 32px;
+	line-height: 37px;
+	color: #666C6E;	
+}
+.accessories {
+	margin-top: 28px;
+}
+.news_img {
+	flex: 1;
+	background: url(img/systemFiltered/news_img.jpg) no-repeat;
+	background-size: cover;
+}
+.news {
+	margin-top: 68px;
+}
+.systemFiltered .news_caption {
+	margin-top: 122px;
+}
+.news_content_wrap {
+	background: #6087A4;
+}
+.news_form {
+	margin-top: 60px;
+}
+.news_form input::-moz-placeholder {
+	font-family: 'Conv_FuturaBookC';
+	font-size: 16px;
+	line-height: 18px;
+	color: white;	
+}
+.news_form input::-webkit-input-placeholder {
+	font-family: 'Conv_FuturaBookC';
+	font-size: 16px;
+	line-height: 18px;
+	color: white;
+}
+.questions_consent:checked + label .questions_checkbox {
+	color: white;
+}
+.news_form input[type="email"] {
+	border: none;
+	border-bottom: 1px solid white;
+	background-color: #6087A4;
+	padding-bottom: 14px;
+	font-family: 'Conv_FuturaBookC';
+	font-size: 16px;
+	line-height: 18px;
+	color: white;
+	width: 454px;
+}
+.systemFiltered_news_button:hover {
+	background-color: #FFFFFF;
+	color: #6087A4;
+}
+
+
+
+
+
+
+
+
+.productCard_content_wrap {
+	margin-top: 19px;
+}
+.productCard_content_left {
+	flex: 1;
+	display: flex;
+	position: relative;
+}
+.productCard_content_magnesium {
+	position: absolute;
+	left: 0;
+	top: 33px;
+	width: 180px;
+}
+.productCard_content_left .productCard_content_img {
+	width: 469px;
+	height: 469px;
+	margin-left: auto;
+	margin-right: 47px;
+}
+.productCard_content_right {
+	flex: 1;
+	margin-right: auto;
+}
+.productCard_content_appoint {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 18px;
+}
+.appoint {
+	font-size: 16px;
+	line-height: 27px;
+	display: flex;
+	margin-right: 24px;
+}
+.appoint p {
+	margin-top: 5px;
+	margin-left: 16px;
+}
+.appoint_coffee {
+	color: #D4B53D;
+}
+.appoint_plate {
+	color: #5EC4E1;
+}
+.productCard_content_text {
+	font-size: 18px;
+	line-height: 27px;
+	color: #666C6E;
+	opacity: 0.8;
+	margin-top: 24px;
+}
+.productCard_content_caption h1{
+	font-size: 50px;
+	font-family: 'Conv_FuturaDemiC';
+	line-height: 58px;
+	color: #666C6E;
+}
+.productCard_content_content {
+	margin-left: 15px;
+	margin-top: 21px;
+}
+.productCard_content_button {
+	display: flex;
+	margin-top: 32px;
+}
+.productCard_button {
+	width: 250px;
+	background: #FFFFFF;
+	border: 1px solid #EDEDED;
+	box-sizing: border-box;
+	color: #6087A4;
+	margin-right: 24px;
+}
+.productCard_button:hover {
+	color: white;
+	background-color: #6087A4; 
 }
