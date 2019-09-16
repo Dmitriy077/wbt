@@ -17,7 +17,7 @@
 				<div class="header_nav_logo">
 					<a href="../index.html"><img src="../img/systemFiltered/Logo.png" alt=""></a>
 				</div>
-				<div class="header_nav_nav">
+				<div class="header_nav_nav displayNone_media">
 					<ul>
 						<li><a href="#">О компании</a></li>
 						<li><a href="#">Системы фильтрации</a></li>
@@ -26,7 +26,7 @@
 						<li><a href="#">Контакты</a></li>
 					</ul>
 				</div>
-				<div class="header_nav_contacts">
+				<div class="header_nav_contacts displayNone_media">
 					<div class="header_nav_contacts_phone">
 						<p>+7 495 104-25-12</p>
 						<span>Ежедневно, с 09:00 до 21:00</span>
@@ -34,6 +34,9 @@
 					<div class="header_nav_contacts_dealer">
 						<a href="#"><span>+</span> Стать дилером</a>
 					</div>
+				</div>
+				<div class="header_nav_media">
+					<img src="../img/main/gray.png" alt="">
 				</div>
 			</div>
 			<div class="inner_container systemFiltered">
@@ -409,11 +412,9 @@
 							</div>
 						</div>
 					</div>
-					<a href="#">
-						<div class="view6">
-							<p>Показать еще 6</p>
-						</div>
-					</a>
+					<div class="view6">
+						<p>Показать еще 6</p>
+					</div>
 				</div>
 			</div>
 			<div class="accessories inner_container_left">
@@ -597,28 +598,46 @@
 				<div class="inner_container">
 					<div class="footer_info">
 						<div class="footer_info_filters">
-							<a href="#"><p class="footer_info_main">Фильтры</p></a>
-							<a href="#"><p class="footer_info_side">Кофе</p></a>
-							<a href="#"><p class="footer_info_side">Вендинг</p></a>
-							<a href="#"><p class="footer_info_side">Хлебопечение</p></a>
-							<a href="#"><p class="footer_info_side">Посудомоечные системы</p></a>
-							<a href="#"><p class="footer_info_side">Диспенсеры</p></a>
+							<div class="footer_info_filters_main footer_info_main">
+								<p>Фильтры</p>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</div>
+							<a class="footer_info_filters_a displayNone_media footer_info_side" href="#"><p>Кофе</p></a>
+							<a class="footer_info_filters_a displayNone_media footer_info_side" href="#"><p>Вендинг</p></a>
+							<a class="footer_info_filters_a displayNone_media footer_info_side" href="#"><p>Хлебопечение</p></a>
+							<a class="footer_info_filters_a displayNone_media footer_info_side" href="#"><p>Посудомоечные системы</p></a>
+							<a class="footer_info_filters_a displayNone_media footer_info_side" href="#"><p>Диспенсеры</p></a>
 						</div>
 						<div class="footer_info_technologies">
-							<a href="#"><p class="footer_info_main">Технологии</p></a>
-							<a href="#"><p class="footer_info_side">Отимизация воды</p></a>
-							<a href="#"><p class="footer_info_side">Запатентованная технология<br>обогощения воды магнием</p></a>
-							<a href="#"><p class="footer_info_side">Технология Bestmax</p></a>
+							<div class="footer_info_technologies_main footer_info_main">
+								<p>Технологии</p>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</div>
+							<a class="footer_info_technologies_a displayNone_media footer_info_side" href="#"><p class="">Отимизация воды</p></a>
+							<a class="footer_info_technologies_a displayNone_media footer_info_side" href="#"><p>Запатентованная технология<br>обогощения воды магнием</p></a>
+							<a class="footer_info_technologies_a displayNone_media footer_info_side" href="#"><p>Технология Bestmax</p></a>
 						</div>
 						<div class="footer_info_info">
-							<a href="#"><p class="footer_info_main">Применение</p></a>
-							<a href="#"><p class="footer_info_main">Новости</p></a>
-							<a href="#"><p class="footer_info_main">Полезная информация</p></a>
-							<a href="#"><p class="footer_info_main">Контакты</p></a>
+							<a class="footer_info_main" href="#">
+								<p>Применение</p>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</a>
+							<a class="footer_info_main" href="#">
+								<p class="">Новости</p>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</a>
+							<a class="footer_info_main" href="#">
+								<p>Полезная информация</p>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</a>
+							<a class="footer_info_main" href="#">
+								<p>Контакты</p>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</a>
 						</div>
 						<div class="footer_info_contacts">
-							<p class="footer_info_main">+7 495 104-25-12</p>
-							<p class="footer_info_side">Ежедневно, с 10:00 до 22:00</p>
+							<p class="footer_info_main footer_info_contacts_tel">+7 495 104-25-12</p>
+							<p class="footer_info_side footer_info_contacts_graph">Ежедневно, с 10:00 до 22:00</p>
 							<a href="#">
 								<div class="footer_info_button button button220">
 									Написать письмо

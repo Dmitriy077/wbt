@@ -93,13 +93,47 @@ $(function() {
 
 // Медиа запрос для слайдера
 
-if(window.matchMedia('(max-width: 500px)').matches){
+if(window.matchMedia('(max-width: 600px)').matches){
 	$('.accessories_list').addClass('accessories_list_slider');
 	} else {
 		$('.accessories_list').removeClass('accessories_list_slider');
 	}
 
+$('.view6').on('click', function() {
+	$('.list_articles_margin').css('display', 'block');
+});
 
+$('.footer_info_filters_main').on('click', function() {
+	if ($('.footer_info_filters_a').hasClass('displayNone_media')) {
+		$('.footer_info_filters_a').removeClass('displayNone_media');
+	} else {
+		$('.footer_info_filters_a').addClass('displayNone_media');
+	}
+});
+
+$('.footer_info_technologies_main').on('click', function() {
+	if ($('.footer_info_technologies_a').hasClass('displayNone_media')) {
+		$('.footer_info_technologies_a').removeClass('displayNone_media');
+	} else {
+		$('.footer_info_technologies_a').addClass('displayNone_media');
+	}
+});
+
+
+$('.header_nav_media').on('click', function() {
+	if ($('.header_nav_nav').hasClass('displayNone_media')) {
+		$('.header_nav_nav').removeClass('displayNone_media');
+	} else {
+		$('.header_nav_nav').addClass('displayNone_media');
+	}
+
+
+	if ($('.header_nav_contacts').hasClass('displayNone_media')) {
+		$('.header_nav_contacts').removeClass('displayNone_media');
+	} else {
+		$('.header_nav_contacts').addClass('displayNone_media');
+	}
+});
 
 // Табы карточка товара
 
