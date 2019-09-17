@@ -135,6 +135,16 @@ $('.header_nav_media').on('click', function() {
 	}
 });
 
+
+$('.productCard_breadcrumb').on('click', function() {
+	if ($('.productCard_breadcrumb_hide').hasClass('displayNone_media')) {
+		$('.productCard_breadcrumb_hide').removeClass('displayNone_media');
+	} else {
+		$('.productCard_breadcrumb_hide').addClass('displayNone_media');
+	}
+
+});
+
 // Табы карточка товара
 
 $('.description_characteristics').on('click', function() {

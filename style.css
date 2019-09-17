@@ -1065,29 +1065,152 @@ textarea {
 .footer_info i {
 	display: none;
 }
+.productCard_breadcrumb {
+	display: none;
+}
+
 
 
 
 
 
 @media (max-width: 600px){
+	.otherFiltrationSystems_caption h1 {
+		font-size: 30px;
+		line-height: 35px;
+	}
+	.otherFiltrationSystems .viewAll {
+	    position: absolute;
+	    top: 0px;
+	    left: 0px;
+	}
+	.otherFiltrationSystems {
+		position: relative;
+	}
+	.otherFiltrationSystems_wrap {
+	    margin-top: 36px;
+	}
+	.list_articles_productCard_margin {
+	    margin-right: 16px;
+	}
+	.productCard_accessories_slider {
+	    margin-top: 27px;
+	}
+	.productCard_accessories_wrap {
+		margin-top: 11px;
+	}
+	.description_tabs_content h3 {
+		font-size: 20px;
+		line-height: 35px;	
+		margin-top: 15px;	
+	}
+	.description_tabs_content p {
+	    margin-top: 13px;
+	}
+	.description_tabs_content {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.description_tabs_content {
+		width: auto;
+		margin-top: 0px;
+	}
+	.description_description, 
+	.description_advantage, 
+	.description_characteristics {
+    padding-bottom: 14px;
+}
+	.description_characteristics {
+		line-height: 36px;
+	}
+	.description_tabs p {
+		margin: auto 0;
+	}
+	.description_wrap {
+		margin-top: 15px;
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.productCard_content_button {
+		flex-wrap: wrap;
+		margin-top: 19px;
+	}
+	.productCard_button {
+		width: 312px;
+		margin-bottom: 24px;
+	}
+	.productCard_content_text_more {
+		cursor: pointer;
+		font-size: 16px;
+		line-height: 24px;
+		color: #6087A4;
+	}
+	.productCard_content_text p {
+		display: inline;
+	}
+	.productCard_content_text {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.productCard_content_content,
+	.productCard_content_text {
+		margin: 0;
+	}
+	.productCard_content_caption,
+	.productCard_content_appoint {
+		display: none;
+	}
+	.productCard_content_magnesium {
+		top: 50PX;
+	}
+	.productCard_content_wrap {
+    margin-top: 16px;
+}
+	.productCard_content_left {
+		display: block;
+	}
+	.productCard_content_wrap .flex {
+		display: block;
+	}
+	.productCard_content_left_caption h1 {
+		font-family: 'Conv_FuturaDemiC';
+		font-size: 29.9px;
+		line-height: 35px;
+		color: #666C6E;
+	}
+	.productCard_content_left .productCard_content_img {
+		width: 248px;
+		height: 248px;
+		margin: 44px auto 0 auto;
+	}
+	.productCard_content_img img {
+		width: 248px;
+		height: 248px;
+	}
+	.systemFiltered_breadcrumb {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.productCard_breadcrumb {
+		display: block;
+	}
 	.footer_info i {
 		display: block;
 	}
 	.header_nav {
 		display: flex;
+		display: -webkit-flex;
 		flex-direction: column;
 		position: relative;
 	}
 	.header_nav_nav,
 	.header_nav_contacts {
+		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
-		margin: 0 auto 14px auto;
+		margin-bottom: 14px;
 	}
-	.displayNone_media {
-		display: none;
-	}
+	
 	.header_nav_nav li:first-child {
 	    margin-left: 0;
 	}
@@ -1179,7 +1302,7 @@ textarea {
 	.filters_appoint {
 		margin-left: 0 !important;
 		margin-top: 18px;
-		max-width: 79.5%;
+		width: 248px;
 	}
 	.list_articles {
 	    margin-top: 24px;
@@ -1259,8 +1382,8 @@ textarea {
 		box-sizing: border-box;
 		margin-left: auto;
 		margin-right: auto;
-		width: 312px;
-		padding-right: 0;
+		width: 360px;
+		padding: 0 24px;
 	}
 	.questions_wrap {
 		flex-direction: column-reverse;
@@ -1284,9 +1407,10 @@ textarea {
 		max-width: 312px;
 	}
 	.questions_button {
-		max-width: 312px;
-		margin-left: auto;
-		margin-right: auto;
+		width: 312px;
+		padding: 0 50px;
+		/*margin-left: auto;*/
+		/*margin-right: auto;*/
 		margin-top: 38px;
 	}
 	.questions_wrap {
@@ -1375,6 +1499,11 @@ textarea {
 	}
 	.footer_info_contacts {
 		margin-bottom: 33px;
+		flex: inherit;
+	}
+	.footer_info_contacts .footer_info_main {
+		-webkit-text-fill-color: white;
+		-webkit-margin: 20px;
 	}
 	.footer_copyright_content {
 		flex-direction: column;
@@ -1412,11 +1541,39 @@ textarea {
 	.footer_wrap {
 		padding-top: 0;
 	}
+
+	.displayNone_media {
+		display: none;
+	}
 	.header_nav_media {
 		display: block;
 		position: absolute;
 		cursor: pointer;
 		right: 24px;
 		top: 29px;
+	}
+	.header_nav_nav ul {
+		margin: 0 auto;
+	}
+	.productCard .breadcrumb:nth-child(2) {
+		display: none;
+	}
+	.productCard_breadcrumb {
+		width: 24px;
+		height: 24px;
+		margin: 0 6px;
+		position: relative;
+		top: -4px;
+		cursor: pointer;
+	}
+}
+
+
+
+
+
+@media (max-width: 330px){
+	.filters_appoint {
+		width: 200px;
 	}
 }
