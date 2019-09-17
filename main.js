@@ -38,6 +38,7 @@ $(function() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
+		dots: true,
 	});
 
 	// Слайдер акксессуаров в карточке товара
@@ -141,6 +142,16 @@ $('.productCard_breadcrumb').on('click', function() {
 		$('.productCard_breadcrumb_hide').removeClass('displayNone_media');
 	} else {
 		$('.productCard_breadcrumb_hide').addClass('displayNone_media');
+	}
+
+});
+
+$('.productCard_content_text_more').on('click', function() {
+	if ($('.productCard_content_text_hide').hasClass('displayNone_media')) {
+		$('.productCard_content_text_hide').removeClass('displayNone_media');
+		$('.productCard_content_text_more').addClass('displayNone_media');
+	} else {
+		$('.productCard_content_text_hide').addClass('displayNone_media');
 	}
 
 });

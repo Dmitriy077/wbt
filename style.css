@@ -125,7 +125,7 @@ textarea {
 }
 .header_nav_contacts_phone {
 	margin-right: 44px;
-	padding-top: 24px;
+	padding-top: 32px;
 	padding-right: 40px;
 	border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -550,9 +550,6 @@ textarea {
 	position: relative;
 	bottom: 3px;
 }
-.display_none {
-	display: none;
-}
 .questions_form label {
 	display: flex;
 	display: -webkit-flex;
@@ -755,17 +752,7 @@ textarea {
 
 .systemFiltered a,
 .systemFiltered .header_nav_contacts_phone {
-	color: #666C6E;
-}
-.systemFiltered .header_nav_contacts_dealer a {
-	color: #E5006B;
-}
-.systemFiltered .header_nav_contacts_dealer a span {
-	color: #DDB0C8;
-}
-.wrap_systemFiltered .header_nav,
-.productCard .header_nav  {
-	border-bottom: 1px solid #EDEDED;;
+	color: white;
 }
 
 .systemFiltered .header_nav_contacts_phone {
@@ -808,7 +795,7 @@ textarea {
 }
 .news_img {
 	flex: 1;
-	background: url(img/systemFiltered/news_img.jpg) no-repeat;
+	background: url(img/main/questions.jpg) no-repeat;
 	background-size: cover;
 }
 .news {
@@ -816,9 +803,6 @@ textarea {
 }
 .systemFiltered .news_caption {
 	margin-top: 122px;
-}
-.news_content_wrap {
-	background: #6087A4;
 }
 .news_form {
 	margin-top: 60px;
@@ -856,17 +840,9 @@ textarea {
 .header_nav_media {
 	display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
+.main_slider .slick-dots {
+	display: none !important;
+}
 .productCard_content_wrap {
 	margin-top: 19px;
 }
@@ -945,12 +921,21 @@ textarea {
 	color: white;
 	background-color: #6087A4; 
 }
+.diler_wrap {
+	display: flex;
+}
+.diler_content {
+
+}
 .description_wrap {
 	margin-top: 28px;
 	font-size: 18px;
 	line-height: 27px;
 	color: #666C6E;
 	opacity: 0.8;	
+}
+.display_none2 {
+	display: none;
 }
 .description_wrap .description_tabs {
 	opacity: 1;
@@ -1068,6 +1053,14 @@ textarea {
 .productCard_breadcrumb {
 	display: none;
 }
+.wrap_systemFiltered .header_wrap_backgrond_img_red,
+.wrap_productCard .header_wrap_backgrond_img_red{
+	background-color: #F5B5C9;
+	height: auto;
+}
+.display_none {
+	display: none;
+}
 
 
 
@@ -1075,6 +1068,22 @@ textarea {
 
 
 @media (max-width: 600px){
+	.header_content_img_img {
+	    position: absolute;
+	    left: -92px;
+	    top: 84px;
+	}
+	.header_content_text {
+	    width: 312px;
+	    margin-top: 20px;
+	    text-align: center;
+	}
+		.header_content {
+		flex-wrap: wrap-reverse;
+	}
+	.productCard_content_text_more {
+		cursor: pointer;
+	}
 	.otherFiltrationSystems_caption h1 {
 		font-size: 30px;
 		line-height: 35px;
@@ -1131,13 +1140,23 @@ textarea {
 		font-size: 16px;
 		line-height: 18px;
 	}
+	.diler_img {
+	    background: url(img/main/cofee2.jpg) no-repeat;
+	    background-size: cover;
+	}
 	.productCard_content_button {
 		flex-wrap: wrap;
 		margin-top: 19px;
 	}
+	.main_slider .slick-dots {
+		display: flex !important;
+	}
 	.productCard_button {
 		width: 312px;
 		margin-bottom: 24px;
+	}
+	.wrapper .news {
+		margin-top: 36px;
 	}
 	.productCard_content_text_more {
 		cursor: pointer;
@@ -1205,7 +1224,7 @@ textarea {
 	}
 	.header_nav_nav,
 	.header_nav_contacts {
-		margin: 0 auto;
+		padding-left: 179px;
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 14px;
@@ -1227,6 +1246,12 @@ textarea {
 		margin: 14px 0 0 0;
 		padding: 0;
 	}
+	.header_nav_nav {
+		margin-top: 0;
+	}
+	.header_nav_nav li {
+		text-align: right;
+	}
 	.header_nav_contacts_dealer {
 	    margin-top: 14px;
 	}
@@ -1237,33 +1262,44 @@ textarea {
 	.header_content_line {
 		display: none;
 	}
+	.header_content_button {
+		flex-wrap: wrap;
+		margin: 0 auto;
+		text-align: center;
+		width: 312px;
+	}
+	.button220 {
+		width: 312px;
+		margin-top: 24px;
+	}
+	.header_content_button_more {
+	    margin-left: 0px;
+	}
 	.header_content_text p {
 		font-size: 18px;
-		line-height: 30px;		
-	}
-	.header_content_text {
-		width: 226px;
+		line-height: 30px;	
+		width: 266px;
+		margin: 0 auto;	
+		margin-top: 10px;
 	}
 	.container,
 	.inner_container {
 		padding: 0 24px;
 		max-width: 360px;
 	}
-
 	.header_content_img {
-		margin-right: 0;
-		width: 176px;
-		height: 266px;
+		margin-left: 120px;
+		margin-top: 39px;
+		width: 138px;
+		height: 209px;
 	}
 	.header_content_img img {
-	    width: 176px;
-	    height: 266px;
-	    left: 774px;
-	    top: 163px;
+	    width: 138px;
+	    height: 209px;
 	}
 	.header_content_img_img img {
-		width: 85px;
-		height: 85px;
+		width: 121px;
+		height: 121px;
 	}
 	.systemFiltered .header_nav_logo {
 	    margin-bottom: 11px;
@@ -1291,7 +1327,7 @@ textarea {
 	.filters_filter {
 		width: 48px;
     	margin-top: 18px;
-    	margin-left: auto;
+    	margin-left: 16px;
 	}
 	.filters_filters {
 		margin-left: auto;
@@ -1477,7 +1513,7 @@ textarea {
 		border: 0px;
 	}
 	p.footer_info_contacts_tel {
-		margin: auto;
+		padding: 0 76px;
 		margin-top: 33px;
 		height: auto;
 	}
@@ -1503,7 +1539,6 @@ textarea {
 	}
 	.footer_info_contacts .footer_info_main {
 		-webkit-text-fill-color: white;
-		-webkit-margin: 20px;
 	}
 	.footer_copyright_content {
 		flex-direction: column;
@@ -1521,7 +1556,7 @@ textarea {
 	}
 	.footer_copyright_content .footer_copyright_content_social {
 		flex: inherit;
-		margin: 0 auto;
+		padding: 0 68px;
 		text-align: center;
 		margin-top: 20px;
 		margin-bottom: 31px;
@@ -1565,6 +1600,182 @@ textarea {
 		position: relative;
 		top: -4px;
 		cursor: pointer;
+	}
+	.questions_form input[type="text"], 
+	.questions_form input[type="tel"] {
+		width: 312px;
+	}
+	.questions_form input[type="text"].questions_comment {
+	    width: 312px;
+	}
+	.questions_tel {
+		margin-top: 35px;
+		margin-left: 0;
+	}
+	.header_wrap_backgrond .header_nav_logo {
+		margin-bottom: 15px;
+	}
+	.main_slider {
+		position: relative;
+	}
+	.slick-dots {
+		display: flex;
+		position: absolute;
+		left: 122px;
+		bottom: 25px;
+	}
+	
+	.slick-dots li {
+		width: 20px;
+		height: 20px;
+		border-bottom: 1px solid white;
+		opacity: 0.3;
+		margin-right: 16px;
+	}
+	.slick-dots button {
+		box-sizing: border-box;
+		padding: 0 17px;
+		padding-bottom: 1px;
+		color: white;
+		display: none;
+		font-size: 10px;
+		line-height: 12px;
+		background-color: transparent;
+	}
+	.slick-dots .slick-active button {
+	    display: block;
+	}
+	.slick-dots .slick-active {
+		opacity: 1;
+		width: 40px;
+	}
+	.header_content_button {
+		margin-bottom: 72px;
+	}
+	.header_wrap_backgrond_img_red,
+	.header_wrap_backgrond_img_blue {
+		height: auto;
+	}
+	.filters {
+		margin-top: 28px;
+	}
+	.filters_article {
+	    margin-top: 25px;
+	}
+	.filters_article_slider_margin {
+		margin-right: 16px;
+	}
+	.news_button {
+		width: 312px;
+		margin-top: 23px;
+	}
+	.productCard .news {
+	    margin-top: 41px;
+	}
+	.diler_wrap {
+	    margin-top: 41px;
+	    display: flex;
+	    flex-direction: column;
+	}
+	.diler {
+		flex-direction: column;
+	}
+	.diler_content_text {
+		font-size: 18px;
+	}
+	.diler_img {
+		flex: inherit;
+		height: 248px;
+		width: 100%;
+	}
+	.diler_content_content {
+		margin: 0 auto;
+		max-width: 360px;
+		padding: 0 24px;
+		text-align: center;
+	}
+	.diler_content_text {
+		width: 312px;
+	}
+	.diler_content {
+		flex: inherit;
+		position: relative;
+		height: auto;
+	}
+	.diler_content_line img {
+		width: 52px;
+		height: 9px;
+	}
+	.diler_content_lines img {
+		height: 164px;
+		width: 50px;
+	}
+	.diler_content_button {
+		margin-top: 122px;
+		margin-bottom: 51px;
+	}
+	.diler_content_line {
+	    margin-top: 21px;
+	}
+	.diler_content_text  {
+		margin-top: 19px;
+	}
+	.diler_content_lines {
+		position: absolute;
+		right: 96px;
+		top: 73px;
+	}
+	.news_caption h1 {
+		font-size: 30px;
+		line-height: 35px;
+	}
+	.diler_content_content {
+	    margin: 0 auto;
+	    margin-top: 38px;
+	    text-align: center;
+	}
+	.diler_content h1 {
+		font-size: 30px;
+		line-height: 35px;
+	}
+	.display_none2 {
+		display: block;
+	}
+	.news_wrap {
+	    margin-top: 31px;
+	}
+	.news_slide {
+		width: 266px;
+		height: 412px;
+		margin-top: 10px;
+		margin-right: 24px;
+	}
+	.questions_consent {
+		display: none;
+	}
+	.news_slide_caption {
+		font-size: 20px;
+		line-height: 25px;
+		margin-top: 22px;
+	}
+	.news_slide_text {
+		margin-top: 13px;
+		font-size: 16px;
+		line-height: 24px;		
+	}
+	.news_slide_data {
+		font-size: 16px;
+		line-height: 18px;
+		margin-top: 16px;
+	}
+	.news_slide_img {
+	    margin-top: 17px;	
+		width: 266px;
+		height: 171px;
+	}
+	.news_slide_img img {
+		width: 266px;
+		height: 171px;
 	}
 }
 
