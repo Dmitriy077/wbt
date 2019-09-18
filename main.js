@@ -156,6 +156,17 @@ $('.productCard_content_text_more').on('click', function() {
 
 });
 
+// Дропдаун
+
+
+$(function() {
+
+	$('.filters_appoint_dropdown').dropdown({
+		toggleText: 'По назначению',
+		// followLinks: false
+	});
+});
+
 // Табы карточка товара
 
 $('.description_characteristics').on('click', function() {
