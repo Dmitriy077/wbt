@@ -100,9 +100,16 @@ if(window.matchMedia('(max-width: 600px)').matches){
 		$('.accessories_list').removeClass('accessories_list_slider');
 	}
 
+
+
+// Показать еще 6 - Система фильтрации
+
 $('.view6').on('click', function() {
 	$('.list_articles_margin').css('display', 'block');
 });
+
+
+// Футер медиа
 
 $('.footer_info_filters_main').on('click', function() {
 	if ($('.footer_info_filters_a').hasClass('displayNone_media')) {
@@ -121,6 +128,9 @@ $('.footer_info_technologies_main').on('click', function() {
 });
 
 
+
+// хэдер медиа
+
 $('.header_nav_media').on('click', function() {
 	if ($('.header_nav_nav').hasClass('displayNone_media')) {
 		$('.header_nav_nav').removeClass('displayNone_media');
@@ -137,6 +147,8 @@ $('.header_nav_media').on('click', function() {
 });
 
 
+// Брэдкрамбс
+
 $('.productCard_breadcrumb').on('click', function() {
 	if ($('.productCard_breadcrumb_hide').hasClass('displayNone_media')) {
 		$('.productCard_breadcrumb_hide').removeClass('displayNone_media');
@@ -145,6 +157,9 @@ $('.productCard_breadcrumb').on('click', function() {
 	}
 
 });
+
+
+// Читать полностью медиа карточка товара
 
 $('.productCard_content_text_more').on('click', function() {
 	if ($('.productCard_content_text_hide').hasClass('displayNone_media')) {
@@ -212,3 +227,40 @@ $('.description_description').on('click', function() {
 });
 
 //
+ymaps.ready(init);
+    function init(){ 
+        // Создание карты.    
+        var myMap = new ymaps.Map("map", {
+            // Координаты центра карты.
+            // Порядок по умолчанию: «широта, долгота».
+            // Чтобы не определять координаты центра карты вручную,
+            // воспользуйтесь инструментом Определение координат.
+            center: [55.69350506905505, 37.660547499999936],
+            // Уровень масштабирования. Допустимые значения:
+            // от 0 (весь мир) до 19.
+            zoom: 16
+        });
+
+        myMap.controls
+        	.remove('geolocationControl')
+        	.remove('searchControl')
+        	.remove('trafficControl')
+        	.remove('typeSelector')
+        	.remove('fullscreenControl')
+        	.remove('zoomControl')
+        	.remove('rulerControl')
+        	.remove('control.Button');
+
+        myMap.behaviors.disable([
+			// 'drag',
+			'scrollZoom'
+        	]);
+
+        var myPlacemark = new ymaps.Placemark([55.69350506905505,37.660547499999936], {}, {
+    		iconLayout: 'default#image',
+		    iconImageHref: '../img/main/Vector.svg',
+		    iconImageSize: [46, 52],
+		    iconImageOffset: [-10, -40]
+        });
+		myMap.geoObjects.add(myPlacemark);
+    }

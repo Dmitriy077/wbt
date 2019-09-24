@@ -26,6 +26,12 @@ textarea {
 	box-sizing: border-box;
 	border: 0px solid black;
 }
+/*button:active, button:focus {
+  outline: none !important;
+}*/
+button::-moz-focus-inner {
+  border: 0 !important;
+}
 .flex {
 	display: flex;
 }
@@ -108,11 +114,18 @@ textarea {
 	line-height: 16px;
 	opacity: 0.8;
 }
+.systemFiltered {
+	border-bottom: 1px solid #EDEDED;
+}
+.systemFiltered a {
+	color: #666C6E;
+}
 .header_nav_contacts_dealer a {
 	font-size: 18px;
 	line-height: 21px;
 	font-family: 'Conv_FuturaDemiC';
 	margin-top: 40px;
+	color: #E5006B;
 }
 .header_nav_contacts_dealer {
 	margin-top: 33px;
@@ -570,7 +583,7 @@ textarea {
 	width: 20px;
 	height: 20px;
 	border: 1px solid #ffffff85;
-	box-sizing: border-box;	
+	box-sizing: border-box;
 	font-size: 12px;
 	color: transparent;
 	text-align: center;
@@ -591,7 +604,7 @@ textarea {
 	font-family: 'Conv_FuturaBookC';
 	font-size: 16px;
 	line-height: 18px;
-	color: white;	
+	color: white;
 }
 .questions_form input::-webkit-input-placeholder {
 	font-family: 'Conv_FuturaBookC';
@@ -665,13 +678,13 @@ textarea {
 	font-size: 18px;
 	line-height: 27px;
 	color: #FFFFFF;
-	opacity: 0.5;	
+	opacity: 0.5;
 }
 .footer_info_main {
 	font-family: 'Conv_FuturaBookC';
 	font-size: 24px;
 	line-height: 30px;
-	color: #FFFFFF;	
+	color: #FFFFFF;
 }
 .footer_info .footer_info_button {
 	width: 261px;
@@ -706,7 +719,11 @@ textarea {
 	line-height: 27px;
 	color: #FFFFFF;
 	opacity: 0.5;
-	display: inline-block;	
+	display: inline-block;
+}
+.footer_copyright_content_development {
+	position: relative;
+	top: -11px;
 }
 .footer_copyright_content_copyright {
 	flex: 2;
@@ -731,10 +748,9 @@ textarea {
 	margin-left: 18px;
 }
 .footer_copyright_content_development span {
-	opacity: 1;
-	font-size: 18px;
-	line-height: 27px;
-	color: #FFFFFF;
+	margin-left: 10px;
+	position: relative;
+	top: 10px;
 }
 .viewAll {
     margin-left: auto;
@@ -753,10 +769,7 @@ textarea {
 
 
 
-.systemFiltered a,
-.systemFiltered .header_nav_contacts_phone {
-	color: white;
-}
+
 
 .systemFiltered .header_nav_contacts_phone {
 	border-right: 1px solid #EDEDED;
@@ -765,7 +778,7 @@ textarea {
 	font-size: 14px;
 	line-height: 16px;
 	color: #666C6E;
-	opacity: 0.8;	
+	opacity: 0.8;
 }
 .dropdown-toggle {
 	position: relative;
@@ -794,7 +807,7 @@ textarea {
 	font-family: 'Conv_FuturaDemiC';
 	font-size: 32px;
 	line-height: 37px;
-	color: #666C6E;	
+	color: #666C6E;
 }
 .accessories {
 	margin-top: 28px;
@@ -817,7 +830,7 @@ textarea {
 	font-family: 'Conv_FuturaBookC';
 	font-size: 16px;
 	line-height: 18px;
-	color: white;	
+	color: white;
 }
 .news_form input::-webkit-input-placeholder {
 	font-family: 'Conv_FuturaBookC';
@@ -923,7 +936,7 @@ textarea {
 }
 .productCard_button:hover {
 	color: white;
-	background-color: #6087A4; 
+	background-color: #6087A4;
 }
 .diler_wrap {
 	display: flex;
@@ -936,7 +949,7 @@ textarea {
 	font-size: 18px;
 	line-height: 27px;
 	color: #666C6E;
-	opacity: 0.8;	
+	opacity: 0.8;
 }
 .display_none2 {
 	display: none;
@@ -1014,7 +1027,7 @@ textarea {
 	width: 138px;
 	height: 48px;
 	background: #FFFFFF;
-	border: 1px solid #EDEDED;	
+	border: 1px solid #EDEDED;
 	margin-left: 16px;
 	margin-top: 6px;
 }
@@ -1085,7 +1098,7 @@ textarea {
 	color: #666C6E;
 	background: #FFFFFF;
 	border: 1px solid #EDEDED;
-	box-sizing: border-box;	
+	box-sizing: border-box;
 	display: none;
 }
 .view6 p {
@@ -1105,13 +1118,116 @@ textarea {
 .display_none {
 	display: none;
 }
+.caption h1 {
+	font-size: 50px;
+	line-height: 58px;
+	font-family: 'Conv_FuturaDemiC';
+	color: #666C6E;
+}
+.contacts_caption {
+	margin-top: 60px;
+}
+.contacts_address {
+	margin-top: 27px;
+}
+.contacts_address a {
+	font-size: 22px;
+	line-height: 30px;
+	color: #666C6E;
+}
+.contacts_phone {
+	margin-top: 31px;
+}
+.contacts_phone a {
+	margin-top: 20px;
+	font-size: 35px;
+	line-height: 30px;
+	color: #666C6E;
+}
+.contacts_schedule {
+	margin-top: 5px;
+	font-size: 18px;
+	line-height: 27px;
+	color: #666C6E;
+	opacity: 0.8;	
+}
+.contacts_email {
+	margin-top: 24px;
+}
+.contacts_email a {
+	margin-top: 20px;
+	font-size: 35px;
+	line-height: 30px;
+	text-decoration-line: underline;
+	color: #6087A4;	
+}
+.contacts_social ul {
+	margin-bottom: 101px;
+}
+.contacts_social {
+	margin-top: 76px;
+}
+.contacts_social li {
+	background: #FFFFFF;
+	border: 1px solid #EDEDED;
+	box-sizing: border-box;
+	padding: 21px 25px;
+	margin-right: 30px;
+}
+.contacts_social li:last-child {
+	border: 0px solid #EDEDED;
+	padding: 19px 0px;
+	margin-right: 0px;
+	font-size: 18px;
+	line-height: 27px;
+	opacity: 0.8;
+}
+.contacts_social li:last-child a {
+	color: #666C6E;
+}
+.contacts_social i {
+	color: #6087A4;
+	font-size: 22px;
+}
+.container.contacts {
+	padding-right: 0;
+}
+.myMap {
+	width: 100%;
+	height: 605px;
+}
 
+
+.display_flex {
+	display: flex;
+}
+.contacts_content {
+	flex: 1;
+	
+}
+.contacts_map {
+	flex: 1;
+}
+.contacts_content_content {
+	margin-left: auto;
+	margin-right: 122px;
+}
+.container_map {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
 
 
 
 
 
 @media (max-width: 600px){
+	.contacts_content_content {
+	    max-width: 360px;
+	    padding: 0 24px;
+	    box-sizing: border-box;
+	    margin: 0 auto;
+	}
 	.header_content_img_img {
 	    position: absolute;
 	    left: -92px;
@@ -1154,8 +1270,8 @@ textarea {
 	}
 	.description_tabs_content h3 {
 		font-size: 20px;
-		line-height: 35px;	
-		margin-top: 15px;	
+		line-height: 35px;
+		margin-top: 15px;
 	}
 	.description_tabs_content p {
 	    margin-top: 13px;
@@ -1168,11 +1284,11 @@ textarea {
 		width: auto;
 		margin-top: 0px;
 	}
-	.description_description, 
-	.description_advantage, 
+	.description_description,
+	.description_advantage,
 	.description_characteristics {
     padding-bottom: 14px;
-}
+	}
 	.description_characteristics {
 		line-height: 36px;
 	}
@@ -1228,7 +1344,7 @@ textarea {
 	}
 	.productCard_content_wrap {
     margin-top: 16px;
-}
+	}
 	.productCard_content_left {
 		display: block;
 	}
@@ -1271,14 +1387,10 @@ textarea {
 	}
 	.header_nav_nav,
 	.header_nav_contacts {
-		/*padding-left: 152px;*/
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 14px;
 		margin-left: auto;
-	}
-	.header_nav_contacts {
-		/*padding-left: 138px;*/
 	}
 	.header_nav_nav li:first-child {
 	    margin-left: 0;
@@ -1327,9 +1439,9 @@ textarea {
 	}
 	.header_content_text p {
 		font-size: 18px;
-		line-height: 30px;	
+		line-height: 30px;
 		width: 266px;
-		margin: 0 auto;	
+		margin: 0 auto;
 		margin-top: 10px;
 	}
 	.container,
@@ -1561,7 +1673,7 @@ textarea {
 		margin: 0;
 		display: flex;
 	}
-	.footer_info_filters .displayNone_media, 
+	.footer_info_filters .displayNone_media,
 	.footer_info_technologies .displayNone_media {
 		display: none;
 	}
@@ -1626,9 +1738,6 @@ textarea {
 	.footer_copyright_content {
 		margin-top: 31px;
 	}
-	.footer_copyright_content_development span {
-		font-size: 16px;
-	}
 	.footer_wrap {
 		padding-top: 0;
 	}
@@ -1657,7 +1766,7 @@ textarea {
 		top: -4px;
 		cursor: pointer;
 	}
-	.questions_form input[type="text"], 
+	.questions_form input[type="text"],
 	.questions_form input[type="tel"] {
 		width: 312px;
 	}
@@ -1681,7 +1790,7 @@ textarea {
 		left: 34%;
 		bottom: 25px;
 	}
-	
+
 	.slick-dots li {
 		width: 20px;
 		height: 20px;
@@ -1819,7 +1928,7 @@ textarea {
 	.news_slide_text {
 		margin-top: 13px;
 		font-size: 16px;
-		line-height: 24px;		
+		line-height: 24px;
 	}
 	.news_slide_data {
 		font-size: 16px;
@@ -1827,7 +1936,7 @@ textarea {
 		margin-top: 16px;
 	}
 	.news_slide_img {
-	    margin-top: 17px;	
+	    margin-top: 17px;
 		width: 266px;
 		height: 171px;
 	}
@@ -1845,6 +1954,70 @@ textarea {
 	}
 	.filters_appoint {
 		width: 230px;
+	}
+	.contacts {
+		flex-direction: column-reverse;
+	}
+	.myMap {
+		height: 192px;
+		margin-top: 25px;
+	}
+	.caption h1 {
+		font-size: 30px;
+		line-height: 35px;	
+		text-align: center;
+	}
+	.contacts_address a {
+		font-size: 16px;
+		line-height: 24px;
+		text-align: center;
+	}
+	.contacts_phone a {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.contacts_schedule {
+		font-size: 16px;
+		line-height: 27px;		
+	}
+	.contacts_social li {
+	    padding: 15px 21px;
+	    margin-right: 20px;
+
+	}
+	.contacts_social ul {
+		flex-wrap: wrap;
+		text-align: center;
+		margin-left: 52px;
+	}
+	.contacts_social li:last-child {
+		margin-left: 30px;
+		margin-top: 5px;
+	}
+	.contacts_social li:last-child a {
+		font-size: 16px;
+		line-height: 27px;		
+	}
+	.contacts_social ul {
+	    margin-bottom: 24px;
+	}
+	.contacts_social {
+	    margin-top: 32px;
+	}
+	.contacts_caption {
+	    margin-top: 22px;
+	}
+	.contacts_address {
+	    margin-top: 17px;
+	    text-align: center;
+	}
+	.contacts_phone {
+	    margin-top: 16px;
+	    text-align: center;
+	}
+	.contacts_schedule {
+	    margin-top: 0px;
+	    text-align: center;
 	}
 }
 
@@ -1888,7 +2061,7 @@ textarea {
 		padding: 0 75px;
 	}
 	.questions_form input[type="text"].questions_comment,
-	.questions_form input[type="text"], 
+	.questions_form input[type="text"],
 	.questions_form input[type="tel"] {
 	    width: 270px;
 	}
@@ -1927,6 +2100,7 @@ textarea {
 		border-bottom: 1px solid white;
 		margin-left: auto;
 		margin-bottom: 6px;
+		cursor: pointer;
 	}
 	.slick-dots button {
 		box-sizing: border-box;
@@ -1961,5 +2135,5 @@ textarea {
   .article_caption h1 {
   	vertical-align: middle;
   }
- 
+
 }
