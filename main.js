@@ -226,6 +226,12 @@ $('.description_description').on('click', function() {
 	$('.description_characteristics').removeClass('description_tabs_active');
 });
 
+$(document).ready(function() {
+	$("#phone_main").mask("+7 (999) 999-9999");
+	$("#phone_systemFiltered").mask("+7 (999) 999-9999");
+	$("#phone_about").mask("+7 (999) 999-9999");
+	$("#phone_productCard").mask("+7 (999) 999-9999");
+});
 //
 ymaps.ready(init);
     function init(){ 

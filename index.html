@@ -22,11 +22,12 @@
 							</div>
 							<div class="header_nav_nav displayNone_media">
 								<ul>
-									<li><a href="pages/productCard.html">О компании</a></li>
-									<li><a href="pages/systemFiltered.html">Системы фильтрации</a></li>
+									<li><a href="pages/about.html">О компании</a></li>
+									<li><a href="pages/systemFiltered.html">Каталог</a></li>
 									<li><a href="#">Технологии</a></li>
 									<li><a href="#">Применение</a></li>
-									<li><a href="#">Контакты</a></li>
+									<li><a href="#">Где купить</a></li>
+									<li><a href="pages/contacts.html">Контакты</a></li>
 								</ul>
 							</div>
 							<div class="header_nav_contacts displayNone_media">
@@ -636,7 +637,7 @@
 				</div>
 			</div>
 			<div class="news questions_wrap">
-				<div class="news_content_wrap questions_content_wrap systemFiltered">
+				<div class="news_content_wrap questions_content_wrap">
 					<div class="questions_content">
 						<div class="questions_caption">
 							<h1>Остались вопросы?</h1>
@@ -644,11 +645,11 @@
 						</div>
 						<div class="questions_form">
 							<form action="#" name="questions_form">
-								<input class="questions_name" type="text" name="name" placeholder="Ваше имя">
-								<input class="questions_tel" type="tel" name="tel" placeholder="Ваш телефон">
+								<input class="questions_name" type="text" name="name" placeholder="Ваше имя" required>
+								<input id="phone_main" class="questions_tel" type="tel" name="tel" placeholder="Ваш телефон">
 								<input class="questions_comment" type="text" name="comment" placeholder="Комментарий">
 								<input class="questions_consent display_none" id="questions_consent" type="checkbox">
-								<label for="questions_consent" class="label_consent">
+								<label for="questions_consent" class="label_consent" required>
 									<div class="questions_checkbox">&#10004;</div>
 									<div class="questions_checkbox_text">Согласен с <u>политикой о персональных данных</u></div>
 								</label>
@@ -658,6 +659,14 @@
 					</div>
 				</div>
 				<div class="news_img"></div>
+			</div>
+			<div class="footer_more">
+				<div class="inner_container display_flex footer_more_content">
+					<p class="footer_more_more">Подробная информация</p>
+					<p class="footer_more_arrow">
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</p>
+				</div>
 			</div>
 			<div class="footer_wrap">
 				<div class="inner_container">
@@ -734,6 +743,7 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="./plugins/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="./plugins/mask/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="./plugins/slick/slick.min.js"></script>
 	<script type="text/javascript" src="./plugins/jquery.dropdown-master/js/jquery.dropdown.js"></script>
 	<script type="text/javascript" src="./main.js"></script>
