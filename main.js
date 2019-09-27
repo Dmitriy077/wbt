@@ -72,6 +72,23 @@ $(function() {
 	});
 
 
+	// Слайдер в Применении
+
+	$('.use_slider').slick({
+			// autoplay: true,
+	  		// autoplaySpeed: 3000,
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			dots: false,
+			arrows: true,
+			adaptiveWidth: true,
+			variableWidth: true,
+			appendArrows:'.use_slider_arrows',
+			prevArrow:'<div class="use_slider_arrows_prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
+			nextArrow:'<div class="use_slider_arrows_next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
+		});
+
+
 	//Медиа слайдер акссесуаров в системах фильтрации
 	$('.accessories_list_slider').slick({
 		// autoplay: true,
@@ -174,11 +191,81 @@ $('.productCard_content_text_more').on('click', function() {
 // Дропдаун
 
 
-$(function() {
+// $(function() {
 
-	$('.filters_appoint_dropdown').dropdown({
-		toggleText: 'По назначению',
-		// followLinks: false
+// 	$('.filters_appoint_dropdown').dropdown({
+// 		toggleText: 'По назначению',
+// 		titleText: 'По назначению',
+// 		// followLinks: false
+// 	});
+// });
+
+// $(function() {
+
+// 	$('.about_map_content_filter').dropdown({
+// 		toggleText: 'Филиалы BWT',
+// 		titleText: 'Филиалы BWT',
+// 		// followLinks: false
+// 	});
+// });
+
+
+$('.about_map_content_filter_wrap').on('click', function(){
+	$('.about_map_content_filter').show();
+});
+
+$('.about_filter_all').click(function(event) {
+	event.stopPropagation();
+	$('.about_filter_title').text('Филиалы BWT');
+	$('.about_map_content_filter').hide();
+});
+
+$('.about_filter_company').click(function(event) {
+	event.stopPropagation();
+	$('.about_filter_title').text('Филиалы компании BWT');
+	$('.about_map_content_filter').hide();
+});
+
+$('.about_filter_partners').click(function(event) {
+	event.stopPropagation();
+	$('.about_filter_title').text('Филиалы партнеров BWT');
+	$('.about_map_content_filter').hide();
+});
+
+// Фильтр карты о компании
+
+
+$('.about_filter_company').on('click', function() {
+	$('.compani_js').show();
+	$('.partners_js').hide();
+});
+$('.about_filter_partners').on('click', function() {
+	$('.compani_js').hide();
+	$('.partners_js').show();
+});
+$('.about_filter_all').on('click', function() {
+	$('.compani_js').show();
+	$('.partners_js').show();
+});
+
+
+
+$('.compani_js').on('click', function() {
+	$(this).find('.company_window').show();
+});
+
+$('.partners_js').on('click', function() {
+	$(this).find('.company_window').show();
+});
+
+$('.exit').click(function(event) {
+	event.stopPropagation();
+	$('.company_window').hide();
+});
+
+jQuery(function($){
+	$(document).mouseup(function (e){ 
+		$('.company_window').hide();		
 	});
 });
 

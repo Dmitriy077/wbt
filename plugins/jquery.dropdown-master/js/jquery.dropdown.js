@@ -1312,7 +1312,7 @@
 			// Get toggle
 			var $toggle = elem.toggleButton,
 			    $text   = elem.toggleText;
-
+			    	var i = 1;
 			// Store original
 			if ( !$toggle.data( 'dropdown-text' ) )
 				$toggle.data( 'dropdown-text', $text.html() );
