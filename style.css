@@ -1294,11 +1294,63 @@ button::-moz-focus-inner {
 	width: 250px;
 	height: 48px;
 	margin-left: auto;
+	font-size: 16px;
+	line-height: 18px;
+	color: #666C6E;
+	background-color: white;
+	box-sizing: border-box;
+	padding: 15px 20px;
+	cursor: pointer;
+	position: relative;
+}
+.where_buy_filter {
+	width: 250px;
+	height: 48px;
+	font-size: 16px;
+	line-height: 18px;
+	color: #666C6E;
+	background-color: white;
+	box-sizing: border-box;
+	padding: 9px 20px;
+	cursor: pointer;
+	position: relative;
+	border: 1px solid #EDEDED;
 }
 
-.about_map_content_filter_wrap .dropdown-list {
-	height: 160px;
+.about_map_content_filter_wrap li,
+.where_buy_filter li {
+	width: 248px;
+	height: 48px;
+	background-color: white;
+	box-sizing: border-box;
+	padding: 15px 20px;
 }
+.about_map_content_filter_wrap li:hover,
+.where_buy_filter li:hover {
+	background-color: #ebeff5;
+}
+.about_map_content_filter {
+	position: absolute;
+	left: 0px;
+	top: 48px;
+}
+.where_buy_filter_filter {
+	border: 1px solid #EDEDED;
+	position: absolute;
+	left: -1px;
+	top: 46px;
+	width: 250px;
+	box-sizing: border-box;
+}
+.about_map_content_filter_wrap i,
+.where_buy_filter i {
+	color: #666C6E;
+	font-size: 22px;
+	position: absolute;
+	right: 20px;
+	top: 15px;
+}
+
 .about_map_content {
 	background: url(img/about/Map.svg) no-repeat;
 	background-size: cover;
@@ -1319,7 +1371,7 @@ button::-moz-focus-inner {
 	font-size: 14px;
 	line-height: 27px;
 	color: #666C6E;
-	margin-left: 350px;
+	margin-left: 280px;
 	opacity: 0.8;	
 	display: flex;
 	margin-top: auto;
@@ -1349,10 +1401,17 @@ button::-moz-focus-inner {
 	border-radius: 30px;
 	box-shadow: 0 0 0 5px #6087a430, 0 0 0 0 #066CB2;
 }
+
 .company:hover {
 	animation: company 1s infinite ease-in-out;
 }
+.company_hover {
+	animation: company 1s infinite ease-in-out;
+}
 .partners:hover {
+	animation: partners 1s infinite ease-in-out;
+}
+.partners_hover {
 	animation: partners 1s infinite ease-in-out;
 }
 .company_position {
@@ -1370,7 +1429,7 @@ button::-moz-focus-inner {
 }
 .company_position1 {
 	position: absolute;
-	left: 100px;
+	left: 144px;
 	top: 50px;
 }
 .company_position2 {
@@ -1634,13 +1693,81 @@ button::-moz-focus-inner {
 .footer_info_technologies .footer_first {
 	margin-top: 49px;
 }
-
-
-
-
-
-
-
+.about_map_content_filter,
+.company_window  {
+	z-index: 999;
+}
+.where_buy span {
+	font-size: 16px;
+	line-height: 27px;
+	color: #666C6E;
+	position: relative;
+	left: 16px;
+	top: -3px;
+}
+.storage_checkbox,
+.service_checkbox {
+	width: 20px;
+	height: 20px;
+	box-sizing: border-box;
+	border: 1px solid #EDEDED;
+	color: transparent;
+	font-size: 14px;
+	text-align: center;
+}
+.where_buy input[type="checkbox"] {
+	display: none;
+}
+#storage:checked + label .storage_checkbox,
+#service:checked + label .service_checkbox {
+	color: #6087A4;
+}
+.where_buy_button .questions_button {
+	font-size: 16px;
+	line-height: 19px;
+	align-items: center;
+	text-align: center;
+	color: #6087A4;
+	border: 1px solid #EDEDED;
+	height: 48px;
+	font-family: 'Conv_FuturaDemiC';
+	padding-top: 13px;
+	box-sizing: border-box;
+	margin-top: 7px;
+}
+.where_buy_button {
+	margin-left: auto;
+}
+.where_buy_button .questions_button:hover {
+	color: white;
+	border: 0px;
+	background-color: #6087A4;
+}
+.where_buy {
+	margin-top: 30px;
+}
+.where_buy_filter {
+	margin-left: 42px;
+	margin-top: 8px;
+}
+.where_buy_storage {
+	margin-left: 39px;
+	margin-top: 20px;
+}
+.where_buy_service {
+	margin-left: 32px;
+	margin-top: 20px;
+}
+.about_map_content_filter_wrap span,
+.where_buy_filter span {
+	display: block;
+	position: static;
+	width: 250px;
+}
+.buy_myMap {
+	height: 434px;
+	width: 100%;
+}
 
 
 
@@ -1657,6 +1784,25 @@ button::-moz-focus-inner {
 
 
 @media (max-width: 600px){
+	/*.company_window {
+		
+	}
+	.partners_position2 {
+		left: 40px;		
+		top: 300px;
+	}
+	.partners_position3 {
+		left: 270px;
+		top:240px;
+	}
+	.company_position3 {
+		left: 120px;
+		top: 120px;
+	}*/
+	.about_map_content_content_text_description .company,
+	.about_map_content_content_text_description .partners {
+		width: 14.5px;
+	}
 	.about_map_content_content_text {
 		margin-top: 0;
 		padding-left: 24px;
@@ -1664,20 +1810,26 @@ button::-moz-focus-inner {
 		top: -202px;
 	}
 	.about_map_content {
-		max-width: 360px;
+		width: 1134px;
 		margin: 0 auto;
 		flex-direction: column;
 	}
 	.about_map_content_content_text_description {
-		margin: 0 auto;
+		margin: 0;
 		position: relative;
 		top: 320px;
+		left: 44px;
 		line-height: 16px;
 	}
 	.about_map_content_filter_wrap {
-		margin: 0 auto;
+		margin-left: 24px;
 		position: relative;
 		top: -224px;
+		width: 312px;
+	}
+	.about_map_content_filter_wrap li,
+	.where_buy_filter {
+		width: 312px;
 	}
 	.about_map_content_content_text_description_company,
 	.about_map_content_content_text_description_partners {
@@ -1692,8 +1844,15 @@ button::-moz-focus-inner {
 		height: 200px;
 	}
 	.about_map.inner_container {
-		max-width: 1366px;
+		overflow-x: scroll;
+		max-width: 600px;
 		padding: 0;
+	}
+	.company_window {
+		position: fixed;
+		top: 40%;
+		left: 17%;
+		opacity: 1;
 	}
 	.footer_info_filters .footer_first, 
 	.footer_info_technologies .footer_first {
@@ -2683,6 +2842,14 @@ button::-moz-focus-inner {
 
 
 @media (max-width: 330px){
+	.about_map_content_filter_wrap,
+	.where_buy_filter {
+		width: 270px;
+	}
+	.about_map_content_filter_wrap li,
+	.where_buy_filter li {
+		width: 270px;
+	}
 	.dropdown-menu-main, .dropdown-menu-open {
 		width: 250px;
 	}

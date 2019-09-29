@@ -191,14 +191,14 @@ $('.productCard_content_text_more').on('click', function() {
 // Дропдаун
 
 
-// $(function() {
+$(function() {
 
-// 	$('.filters_appoint_dropdown').dropdown({
-// 		toggleText: 'По назначению',
-// 		titleText: 'По назначению',
-// 		// followLinks: false
-// 	});
-// });
+	$('.filters_appoint_dropdown').dropdown({
+		toggleText: 'По назначению',
+		titleText: 'По назначению',
+		// followLinks: false
+	});
+});
 
 // $(function() {
 
@@ -210,27 +210,45 @@ $('.productCard_content_text_more').on('click', function() {
 // });
 
 
+// Дропдаун карты о компании
+
 $('.about_map_content_filter_wrap').on('click', function(){
 	$('.about_map_content_filter').show();
 });
 
-$('.about_filter_all').click(function(event) {
+$('.about_filter').click(function(event) {
 	event.stopPropagation();
-	$('.about_filter_title').text('Филиалы BWT');
+	let text = $(this).text();
+	$('.about_filter_title').text(text);
 	$('.about_map_content_filter').hide();
 });
 
-$('.about_filter_company').click(function(event) {
-	event.stopPropagation();
-	$('.about_filter_title').text('Филиалы компании BWT');
-	$('.about_map_content_filter').hide();
+
+
+// Дропдаун фильтра где купить
+
+$('.where_buy_filter').on('click', function(){
+	$('.where_buy_filter_filter').show();
 });
 
-$('.about_filter_partners').click(function(event) {
+$('.where_buy_filter_city').click(function(event) {
 	event.stopPropagation();
-	$('.about_filter_title').text('Филиалы партнеров BWT');
-	$('.about_map_content_filter').hide();
+	let text = $(this).text();
+	$('.where_buy_filter_title').text(text);
+	$('.where_buy_filter_filter').hide();
 });
+
+// $('.where_buy_filter_city').click(function(event) {
+// 	event.stopPropagation();
+// 	$('.about_filter_title').text('Город2');
+// 	$('.where_buy_filter_filter').hide();
+// });
+
+// $('.where_buy_filter_city').click(function(event) {
+// 	event.stopPropagation();
+// 	$('.about_filter_title').text('Город3');
+// 	$('.where_buy_filter_filter').hide();
+// });
 
 // Фильтр карты о компании
 
@@ -320,40 +338,40 @@ $(document).ready(function() {
 	$("#phone_productCard").mask("+7 (999) 999-9999");
 });
 //
-ymaps.ready(init);
-    function init(){ 
-        // Создание карты.    
-        var myMap = new ymaps.Map("map", {
-            // Координаты центра карты.
-            // Порядок по умолчанию: «широта, долгота».
-            // Чтобы не определять координаты центра карты вручную,
-            // воспользуйтесь инструментом Определение координат.
-            center: [55.69350506905505, 37.660547499999936],
-            // Уровень масштабирования. Допустимые значения:
-            // от 0 (весь мир) до 19.
-            zoom: 16
-        });
+// ymaps.ready(init);
+//     function init(){ 
+//         // Создание карты.    
+//         var myMap = new ymaps.Map("map", {
+//             // Координаты центра карты.
+//             // Порядок по умолчанию: «широта, долгота».
+//             // Чтобы не определять координаты центра карты вручную,
+//             // воспользуйтесь инструментом Определение координат.
+//             center: [55.69350506905505, 37.660547499999936],
+//             // Уровень масштабирования. Допустимые значения:
+//             // от 0 (весь мир) до 19.
+//             zoom: 16
+//         });
 
-        myMap.controls
-        	.remove('geolocationControl')
-        	.remove('searchControl')
-        	.remove('trafficControl')
-        	.remove('typeSelector')
-        	.remove('fullscreenControl')
-        	.remove('zoomControl')
-        	.remove('rulerControl')
-        	.remove('control.Button');
+//         myMap.controls
+//         	.remove('geolocationControl')
+//         	.remove('searchControl')
+//         	.remove('trafficControl')
+//         	.remove('typeSelector')
+//         	.remove('fullscreenControl')
+//         	.remove('zoomControl')
+//         	.remove('rulerControl')
+//         	.remove('control.Button');
 
-        myMap.behaviors.disable([
-			// 'drag',
-			'scrollZoom'
-        	]);
+//         myMap.behaviors.disable([
+// 			// 'drag',
+// 			'scrollZoom'
+//         	]);
 
-        var myPlacemark = new ymaps.Placemark([55.69350506905505,37.660547499999936], {}, {
-    		iconLayout: 'default#image',
-		    iconImageHref: '../img/main/Vector.svg',
-		    iconImageSize: [46, 52],
-		    iconImageOffset: [-10, -40]
-        });
-		myMap.geoObjects.add(myPlacemark);
-    }
+//         var myPlacemark = new ymaps.Placemark([55.69350506905505,37.660547499999936], {}, {
+//     		iconLayout: 'default#image',
+// 		    iconImageHref: '../img/main/Vector.svg',
+// 		    iconImageSize: [46, 52],
+// 		    iconImageOffset: [-10, -40]
+//         });
+// 		myMap.geoObjects.add(myPlacemark);
+//     }
