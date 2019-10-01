@@ -226,14 +226,14 @@ $('.productCard_content_text_more').on('click', function() {
 // Дропдаун
 
 
-$(function() {
+// $(function() {
 
-	$('.filters_appoint_dropdown').dropdown({
-		toggleText: 'По назначению',
-		titleText: 'По назначению',
-		// followLinks: false
-	});
-});
+// 	$('.filters_appoint_dropdown').dropdown({
+// 		toggleText: 'По назначению',
+// 		titleText: 'По назначению',
+// 		// followLinks: false
+// 	});
+// });
 
 // $(function() {
 
@@ -273,17 +273,19 @@ $('.where_buy_filter_city').click(function(event) {
 	$('.where_buy_filter_filter').hide();
 });
 
-// $('.where_buy_filter_city').click(function(event) {
-// 	event.stopPropagation();
-// 	$('.about_filter_title').text('Город2');
-// 	$('.where_buy_filter_filter').hide();
-// });
 
-// $('.where_buy_filter_city').click(function(event) {
-// 	event.stopPropagation();
-// 	$('.about_filter_title').text('Город3');
-// 	$('.where_buy_filter_filter').hide();
-// });
+// Дропдаун фильтра главная
+
+$('.filters_appoint').on('click', function(){
+	$('.filters_appoint_filter').show();
+});
+
+$('.filters_appoint_li').click(function(event) {
+	event.stopPropagation();
+	let text = $(this).text();
+	$('.filters_appoint_title').text(text);
+	$('.filters_appoint_filter').hide();
+});
 
 // Фильтр карты о компании
 
