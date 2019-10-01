@@ -99,10 +99,19 @@ $(function() {
 		arrows: false,
 		adaptiveWidth: true,
 		variableWidth: true,
-		// appendArrows:'.otherFiltrationSystems_arrows',
-		// prevArrow:'<div class="otherFiltrationSystems_arrows_prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
-		// nextArrow:'<div class="otherFiltrationSystems_arrows_next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
 	});
+
+	$('.technologies_slider_slick').slick({
+		// autoplay: true,
+  		// autoplaySpeed: 3000,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: false,
+		arrows: false,
+		adaptiveWidth: true,
+		variableWidth: true,
+	});
+
 });
 
 //
@@ -123,6 +132,13 @@ if(window.matchMedia('(max-width: 600px)').matches){
 
 $('.view6').on('click', function() {
 	$('.list_articles_margin').css('display', 'block');
+});
+
+
+// Показать еще 10 - Где купить
+
+$('.buy_find_button .questions_button').on('click', function() {
+	$('.buy_diler_wrap').show();
 });
 
 
@@ -161,6 +177,25 @@ $('.header_nav_media').on('click', function() {
 	} else {
 		$('.header_nav_contacts').addClass('displayNone_media');
 	}
+});
+
+
+// Хэдер медиа 1024
+
+$('.header_nav_media1024').on('click', function() {
+	if ($('.header_nav_contacts_phone').hasClass('displayNone1024')) {
+		$('.header_nav_contacts_dealer').addClass('displayNone1024');
+		$('.header_nav_contacts_phone').removeClass('displayNone1024');
+	} else {
+		$('.header_nav_contacts_dealer').removeClass('displayNone1024');
+		$('.header_nav_contacts_phone').addClass('displayNone1024');
+	}
+
+	// if ($('.header_nav_contacts_phone').hasClass('displayNone1024')) {
+	// 	$('.header_nav_contacts_phone').removeClass('displayNone1024');
+	// } else {
+	// 	$('.header_nav_contacts_phone').addClass('displayNone1024');
+	// }
 });
 
 
@@ -338,40 +373,4 @@ $(document).ready(function() {
 	$("#phone_productCard").mask("+7 (999) 999-9999");
 });
 //
-// ymaps.ready(init);
-//     function init(){ 
-//         // Создание карты.    
-//         var myMap = new ymaps.Map("map", {
-//             // Координаты центра карты.
-//             // Порядок по умолчанию: «широта, долгота».
-//             // Чтобы не определять координаты центра карты вручную,
-//             // воспользуйтесь инструментом Определение координат.
-//             center: [55.69350506905505, 37.660547499999936],
-//             // Уровень масштабирования. Допустимые значения:
-//             // от 0 (весь мир) до 19.
-//             zoom: 16
-//         });
 
-//         myMap.controls
-//         	.remove('geolocationControl')
-//         	.remove('searchControl')
-//         	.remove('trafficControl')
-//         	.remove('typeSelector')
-//         	.remove('fullscreenControl')
-//         	.remove('zoomControl')
-//         	.remove('rulerControl')
-//         	.remove('control.Button');
-
-//         myMap.behaviors.disable([
-// 			// 'drag',
-// 			'scrollZoom'
-//         	]);
-
-//         var myPlacemark = new ymaps.Placemark([55.69350506905505,37.660547499999936], {}, {
-//     		iconLayout: 'default#image',
-// 		    iconImageHref: '../img/main/Vector.svg',
-// 		    iconImageSize: [46, 52],
-// 		    iconImageOffset: [-10, -40]
-//         });
-// 		myMap.geoObjects.add(myPlacemark);
-//     }
