@@ -2078,6 +2078,121 @@ button::-moz-focus-inner {
 .technologies_wrap .footer_more {
 	margin-top: 100px;
 }
+.become_diler_wrap .header_nav_logo {
+	margin-bottom: 15px;
+}
+.become_diler_background_img {
+	background: url(img/diler/main.svg) no-repeat;
+	background-size: cover;
+}
+.become_diler_background_img .breadcrumb a {
+    color: #FFFFFF;
+}
+.become_diler_wrap .header_content_text {
+	margin-top: 43px;
+	width: 591px;
+}
+.become_diler_text {
+	margin-top: 34px;
+}
+.become_diler_wrap .header_content_text p {
+	margin-top: 14px;
+}
+.become_diler_wrap .header_content_button {
+	margin-left: 0;
+	margin-top: 45px;
+}
+.become_diler_wrap .button220 {
+	width: 250px;
+}
+.become_diler_advantages {
+	margin-top: 77px;
+}
+.advantages_caption h1 {
+	font-size: 24px;
+	line-height: 30px;
+	color: #666C6E;
+	width: 848px;
+}
+.advantages_text_text p {
+	font-size: 18px;
+	line-height: 27px;
+	color: #666C6E;
+	opacity: 0.7;
+	position: relative;
+	top: -8px;
+	left: 19px;
+	margin-bottom: 16px;
+	width: 736px;
+}
+.advantages_text {
+	display: flex;
+	
+}
+.advantages_text_wrap {
+	margin-left: 19px;
+	margin-top: 32px;
+}
+.advantages_number {
+	width: 67px;
+	height: 67px;
+	border: 1px solid rgba(102, 108, 110, 0.1);
+	box-sizing: border-box;	
+	font-size: 24px;
+	line-height: 63px;
+	color: #666C6E;
+	text-align: center;
+	border-radius: 100px;
+}
+.become_diler_advantages_block {
+	display: flex;
+	margin-left: 97px;
+	margin-bottom: 10px;
+}
+.become_diler_advantages_caption {
+	margin-bottom: 37px;
+}
+.advantages_caption {
+	margin-left: 30px;
+	margin-top: 19px;
+}
+.become_diler_advantages_end h1 {
+	font-size: 24px;
+	line-height: 30px;
+	color: #666C6E;	
+}
+.become_diler_advantages_end {
+	margin-left: 98px;
+	margin-top: 32px;
+}
+.become_diler_request_img {
+	background: url(img/diler/request.svg) no-repeat;
+    background-size: cover;
+    height: 673px;
+}
+.become_diler_request_wrap {
+	background-color: #F5B5C9;
+	margin-top: 101px;
+}
+.become_diler_request .questions_content {
+	padding-right: 169px;
+}
+.become_diler_request .questions_content .questions_caption {
+	margin-top: 98px;
+}
+.request_email,
+.request_contact {
+	margin-top: 35px;
+}
+.become_diler_request_content .button220 {
+	width: 261px;
+}
+
+
+
+
+
+
 
 
 
