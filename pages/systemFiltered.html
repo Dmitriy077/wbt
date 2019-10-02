@@ -7,7 +7,6 @@
 	<link rel="stylesheet" href="../plugins/slick/slick.css">
 	<link rel="stylesheet" href="../fonts/fonts.css">
 	<link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../plugins/jquery.dropdown-master/css/dropdown.css">
 	<link rel="stylesheet" href="../style.css">
 </head>
 
@@ -23,26 +22,27 @@
 						<ul>
 							<li><a href="about.html">О компании</a></li>
 							<li><a href="systemFiltered.html">Каталог</a></li>
-							<li><a href="#">Технологии</a></li>
-							<li><a href="use.html">Применение</a></li>
-							<li><a href="#">Где купить</a></li>
+							<li><a href="/">Технологии</a></li>
+							<li class="displayNone1024"><a href="use.html">Применение</a></li>
+							<li><a href="buy.html">Где купить</a></li>
 							<li><a href="contacts.html">Контакты</a></li>
 						</ul>
 					</div>
 					<div class="header_nav_contacts displayNone_media">
-						<div class="header_nav_contacts_phone">
+						<div class="header_nav_contacts_phone displayNone1024">
 							<a href="#"><p>+7 495 104-25-12</p></a>
 						</div>
 						<div class="header_nav_contacts_dealer">
-							<a href="#"><span>+</span> Стать дилером</a>
+							<a href="diler.html"><span>+</span> Стать дилером</a>
 						</div>
 					</div>
 					<div class="header_nav_media">
 						<img src="../img/main/media_gray.svg" alt="">
 					</div>
+					<div class="header_nav_media1024">
+						<img src="../img/main/media_gray.svg" alt="">
+					</div>
 				</div>
-			</div>
-		</div>
 			</div>
 			<div class="inner_container systemFiltered">
 				<div class="systemFiltered_breadcrumb breadcrumb">
@@ -54,12 +54,14 @@
 						<h1>Фильтры</h1>
 					</div>
 					<div class="filters_appoint">
-						<ul class="filters_appoint_dropdown">По назначению
-							<li>По назначению2</li>
-							<li>По назначению3</li>
-							<li>По назначению4</li>
-							<li>По назначению5</li>
-							<li>По назначению6</li>
+						<span class="filters_appoint_title">По назначению</span>
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+						<ul class="filters_appoint_filter display_none">
+							<li class="filters_appoint_li">По назначению2</li>
+							<li class="filters_appoint_li">По назначению3</li>
+							<li class="filters_appoint_li">По назначению4</li>
+							<li class="filters_appoint_li">По назначению5</li>
+							<li class="filters_appoint_li">По назначению6</li>
 						</ul>
 					</div>
 					<div class="filters_filters">
@@ -689,6 +691,7 @@
 			</div>
 		</div>
 	</div>
+			
 
 
 
@@ -698,7 +701,6 @@
 	<script type="text/javascript" src="../plugins/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="../plugins/mask/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="../plugins/slick/slick.min.js"></script>
-	<script type="text/javascript" src="../plugins/jquery.dropdown-master/js/jquery.dropdown.js"></script>
 	<script type="text/javascript" src="../main.js"></script>
 </body>
 </html>
