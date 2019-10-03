@@ -120,7 +120,7 @@ $(function() {
 
 // Медиа запрос для слайдера
 
-if(window.matchMedia('(max-width: 600px)').matches){
+if(window.matchMedia('(max-width: 625px)').matches){
 	$('.accessories_list').addClass('accessories_list_slider');
 	} else {
 		$('.accessories_list').removeClass('accessories_list_slider');
@@ -354,5 +354,29 @@ $(document).ready(function() {
 	$("#phone_about").mask("+7 (999) 999-9999");
 	$("#phone_productCard").mask("+7 (999) 999-9999");
 });
+
+
+
+// UI checkbox
+
+
+$('.article_filter_button_reset').on('click', function() {
+  $('.article_filter input:checked').prop('checked', false);
+});
+
+$('.filters_filter').on('click', function() {
+	$('.article_filter ').show();
+});
+
+//
+$('.article_filter_button_use').click(function(event) {
+	event.stopPropagation();
+	$('.article_filter ').hide();
+});
 //
 
+jQuery(function($){
+	$(document).mouseup(function (e){ 
+		$('.article_filter').hide();		
+	});
+});
