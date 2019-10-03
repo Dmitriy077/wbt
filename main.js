@@ -183,19 +183,15 @@ $('.header_nav_media').on('click', function() {
 // Хэдер медиа 1024
 
 $('.header_nav_media1024').on('click', function() {
-	if ($('.header_nav_contacts_phone').hasClass('displayNone1024')) {
-		$('.header_nav_contacts_dealer').addClass('displayNone1024');
-		$('.header_nav_contacts_phone').removeClass('displayNone1024');
+	if ($('.header_nav_contacts_phone').hasClass('displayNone1024-970')) {
+		$('.header_nav_contacts_dealer').addClass('displayNone1024-970');
+		$('.header_nav_contacts_phone').removeClass('displayNone1024-970');
 	} else {
-		$('.header_nav_contacts_dealer').removeClass('displayNone1024');
-		$('.header_nav_contacts_phone').addClass('displayNone1024');
+		$('.header_nav_contacts_dealer').removeClass('displayNone1024-970');
+		$('.header_nav_contacts_phone').addClass('displayNone1024-970');
 	}
 
-	// if ($('.header_nav_contacts_phone').hasClass('displayNone1024')) {
-	// 	$('.header_nav_contacts_phone').removeClass('displayNone1024');
-	// } else {
-	// 	$('.header_nav_contacts_phone').addClass('displayNone1024');
-	// }
+	
 });
 
 
@@ -226,23 +222,7 @@ $('.productCard_content_text_more').on('click', function() {
 // Дропдаун
 
 
-// $(function() {
 
-// 	$('.filters_appoint_dropdown').dropdown({
-// 		toggleText: 'По назначению',
-// 		titleText: 'По назначению',
-// 		// followLinks: false
-// 	});
-// });
-
-// $(function() {
-
-// 	$('.about_map_content_filter').dropdown({
-// 		toggleText: 'Филиалы BWT',
-// 		titleText: 'Филиалы BWT',
-// 		// followLinks: false
-// 	});
-// });
 
 
 // Дропдаун карты о компании
