@@ -1,6 +1,6 @@
 //Слайдеры
 	
-	// Слайдер новостей главная
+// Слайдер новостей главная
 $(function() {
 	$('.news_slider_slick').slick({
 		// autoplay: true,
@@ -16,7 +16,7 @@ $(function() {
 		nextArrow:'<div class="news_arrows_next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
 	});
 	
-	//Слайдер товаров главная
+//Слайдер товаров главная
 	$('.filters_article_slider').slick({
 		// autoplay: true,
   		// autoplaySpeed: 3000,
@@ -31,7 +31,7 @@ $(function() {
 		nextArrow:'<div class="filters_arrows_next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
 	});
 
-	// Главный слайдер
+// Главный слайдер
 	$('.main_slider').slick({
 		// autoplay: true,
   		// autoplaySpeed: 3000,
@@ -41,7 +41,7 @@ $(function() {
 		dots: true,
 	});
 
-	// Слайдер акксессуаров в карточке товара
+// Слайдер акксессуаров в карточке товара
 	$('.productCard_accessories_slider').slick({
 		// autoplay: true,
   		// autoplaySpeed: 3000,
@@ -56,7 +56,7 @@ $(function() {
 		nextArrow:'<div class="productCard_accessories_arrows_next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
 	});
 
-	// Слайдер товаров в карчтоке товара
+// Слайдер товаров в карчтоке товара
 	$('.otherFiltrationSystems_slider').slick({
 		// autoplay: true,
   		// autoplaySpeed: 3000,
@@ -72,7 +72,7 @@ $(function() {
 	});
 
 
-	// Слайдер в Применении
+// Слайдер в Применении
 
 	$('.use_slider').slick({
 			// autoplay: true,
@@ -89,7 +89,7 @@ $(function() {
 		});
 
 
-	//Медиа слайдер акссесуаров в системах фильтрации
+//Медиа слайдер акссесуаров в системах фильтрации
 	$('.accessories_list_slider').slick({
 		// autoplay: true,
   		// autoplaySpeed: 3000,
@@ -219,10 +219,6 @@ $('.productCard_content_text_more').on('click', function() {
 
 });
 
-// Дропдаун
-
-
-
 
 
 // Дропдаун карты о компании
@@ -239,33 +235,6 @@ $('.about_filter').click(function(event) {
 });
 
 
-
-// Дропдаун фильтра где купить
-
-$('.where_buy_filter').on('click', function(){
-	$('.where_buy_filter_filter').show();
-});
-
-$('.where_buy_filter_city').click(function(event) {
-	event.stopPropagation();
-	let text = $(this).text();
-	$('.where_buy_filter_title').text(text);
-	$('.where_buy_filter_filter').hide();
-});
-
-
-// Дропдаун фильтра главная
-
-$('.filters_appoint').on('click', function(){
-	$('.filters_appoint_filter').show();
-});
-
-$('.filters_appoint_li').click(function(event) {
-	event.stopPropagation();
-	let text = $(this).text();
-	$('.filters_appoint_title').text(text);
-	$('.filters_appoint_filter').hide();
-});
 
 // Фильтр карты о компании
 
@@ -348,11 +317,40 @@ $('.description_description').on('click', function() {
 	$('.description_characteristics').removeClass('description_tabs_active');
 });
 
+// Маска для телефона
+
 $(document).ready(function() {
 	$("#phone_main").mask("+7 (999) 999-9999");
 	$("#phone_systemFiltered").mask("+7 (999) 999-9999");
 	$("#phone_about").mask("+7 (999) 999-9999");
 	$("#phone_productCard").mask("+7 (999) 999-9999");
+	$("#diler_form_tel").mask("+7 (999) 999-9999");
+
+
+
+
+// Пуш ап
+
+	$('.select_appoint').selectBoxIt({
+    defaultText : 'По назначению',
+    downArrowIcon : "icon", 
+    mouseenter : 'none'
+	});
+
+
+	$('.select').selectBoxIt({ 
+    defaultText : 'Тип оборудования',
+    downArrowIcon : "icon",
+    mouseenter : 'none'
+	});
+
+
+	$('.select_buy').selectBoxIt({ 
+    defaultText : 'Выберите город',
+    downArrowIcon : "icon",
+    mouseenter : 'none'
+	});
+
 });
 
 
@@ -379,4 +377,43 @@ jQuery(function($){
 	$(document).mouseup(function (e){ 
 		$('.article_filter').hide();		
 	});
+});
+
+
+
+// popup Главная
+
+$('.header_content_button_filter').on('click', function() {
+	$('.popup_filter_wrap').css('display', 'flex');
+});
+
+$(document).mouseup(function (e) {
+    var container = $(".popup_filter_wrap");
+    if (container.has(e.target).length === 0){
+        container.hide();
+    }
+});
+
+$('.popup_filter_exit').click(function(event) {
+	event.stopPropagation();
+	$('.popup_filter_wrap').hide();
+});
+
+
+// popup Дилер
+
+$('.diler_content_button').on('click', function() {
+	$('.diler_form_wrap').css('display', 'flex');
+});
+
+$(document).mouseup(function (e) {
+    var container = $(".diler_form_wrap");
+    if (container.has(e.target).length === 0){
+        container.hide();
+    }
+});
+
+$('.diler_form_exit').click(function(event) {
+	event.stopPropagation();
+	$('.diler_form_wrap').hide();
 });

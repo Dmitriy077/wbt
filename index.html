@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Главная</title>
 	<link rel="stylesheet" href="./plugins/slick/slick.css">
+	<link rel="stylesheet" href="./plugins/select/jquery.selectBoxIt.css">
 	<link rel="stylesheet" href="./fonts/fonts.css">
 	<link rel="stylesheet" href="./fonts/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./style.css">
@@ -369,69 +370,74 @@
 					<div class="filters_caption">
 						<h1>Фильтры</h1>
 					</div>
-					<div class="filters_appoint">
-						<span class="filters_appoint_title">По назначению</span>
-						<i class="fa fa-angle-down" aria-hidden="true"></i>
-						<ul class="filters_appoint_filter display_none">
-							<li class="filters_appoint_li">По назначению2</li>
-							<li class="filters_appoint_li">По назначению3</li>
-							<li class="filters_appoint_li">По назначению4</li>
-							<li class="filters_appoint_li">По назначению5</li>
-							<li class="filters_appoint_li">По назначению6</li>
-							<li class="filters_appoint_li">По назначению2</li>
-							<li class="filters_appoint_li">По назначению3</li>
-							<li class="filters_appoint_li">По назначению4</li>
-							<li class="filters_appoint_li">По назначению5</li>
-							<li class="filters_appoint_li">По назначению6</li>
-						</ul>
-					</div>
-					<div class="filters_filter">
-						<img src="img/main/filter.png" alt="">
-						<p>Фильтр</p>
-						<div class="article_filter display_none">
-							<form action="#">
-								<div class="article_filter_input">
-									<input id="parameter1" class="display_none" type="checkbox" name="parameter">
-									<label for="parameter1">
-										<span class="article_filter_checkbox">&#10004;</span>
-										<span class="article_filter_checkbox_text">Параметр 1</span>
-									</label>
-								</div>
-								<div class="article_filter_input">
-									<input id="parameter2" class="display_none" type="checkbox" name="parameter">
-									<label for="parameter2">
-										<span class="article_filter_checkbox">&#10004;</span>
-										<span class="article_filter_checkbox_text">Параметр 2</span>
-									</label>
-								</div>
-								<div class="article_filter_input">
-									<input id="parameter3" class="display_none" type="checkbox" name="parameter">
-									<label for="parameter3">
-										<span class="article_filter_checkbox">&#10004;</span>
-										<span class="article_filter_checkbox_text">Параметр 3</span>
-									</label>
-								</div>
-								<div class="article_filter_input">
-									<input id="parameter4" class="display_none" type="checkbox" name="parameter">
-									<label for="parameter4">
-										<span class="article_filter_checkbox">&#10004;</span>
-										<span class="article_filter_checkbox_text">Параметр 4</span>
-									</label>
-								</div>
-								<div class="article_filter_input">
-									<input id="parameter5" class="display_none" type="checkbox" name="parameter">
-									<label for="parameter5">
-										<span class="article_filter_checkbox">&#10004;</span>
-										<span class="article_filter_checkbox_text">Параметр 5</span>
-									</label>
-								</div>
-								<div class="article_filter_buttons">
-									<div class="article_filter_button_use">Применить</div>
-									<div class="article_filter_button_reset">Сбросить</div>
-								</div>
-							</form>
+					<form class="filters_appoint_form" action="#">
+						<div class="filters_appoint">
+							<select class="select_appoint" name="filters_appoint" id="">
+								<option value="По назначению1">По назначению1</option>
+								<option value="По назначению2">По назначению2</option>
+								<option value="По назначению3">По назначению3</option>
+								<option value="По назначению4">По назначению4</option>
+								<option value="По назначению5">По назначению5</option>
+								<option value="По назначению6">По назначению6</option>
+								<option value="По назначению">По назначению</option>
+								<option value="По назначению">По назначению</option>
+								<option value="По назначению">По назначению</option>
+								<option value="По назначению">По назначению</option>
+								<option value="По назначению">По назначению</option>
+								<option value="По назначению">По назначению</option>
+								<option value="По назначению">По назначению</option>
+								<option value="По назначению">По назначению</option>
+								<option value="По назначению">По назначению</option>
+							</select>
 						</div>
-					</div>
+						<div class="filters_filter">
+							<img src="img/main/filter.png" alt="">
+							<p>Фильтр</p>
+							<div class="article_filter display_none">
+								<form action="#">
+									<div class="article_filter_input">
+										<input id="parameter1" class="display_none" type="checkbox" name="parameter">
+										<label for="parameter1">
+											<span class="article_filter_checkbox">&#10004;</span>
+											<span class="article_filter_checkbox_text">Параметр 1</span>
+										</label>
+									</div>
+									<div class="article_filter_input">
+										<input id="parameter2" class="display_none" type="checkbox" name="parameter">
+										<label for="parameter2">
+											<span class="article_filter_checkbox">&#10004;</span>
+											<span class="article_filter_checkbox_text">Параметр 2</span>
+										</label>
+									</div>
+									<div class="article_filter_input">
+										<input id="parameter3" class="display_none" type="checkbox" name="parameter">
+										<label for="parameter3">
+											<span class="article_filter_checkbox">&#10004;</span>
+											<span class="article_filter_checkbox_text">Параметр 3</span>
+										</label>
+									</div>
+									<div class="article_filter_input">
+										<input id="parameter4" class="display_none" type="checkbox" name="parameter">
+										<label for="parameter4">
+											<span class="article_filter_checkbox">&#10004;</span>
+											<span class="article_filter_checkbox_text">Параметр 4</span>
+										</label>
+									</div>
+									<div class="article_filter_input">
+										<input id="parameter5" class="display_none" type="checkbox" name="parameter">
+										<label for="parameter5">
+											<span class="article_filter_checkbox">&#10004;</span>
+											<span class="article_filter_checkbox_text">Параметр 5</span>
+										</label>
+									</div>
+									<div class="article_filter_buttons">
+										<div class="article_filter_button_use">Применить</div>
+										<div class="article_filter_button_reset">Сбросить</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</form>	
 					<div class="viewAll displayNone_media">
 						<a href="#">
 							<div class="news_button button">
@@ -448,8 +454,12 @@
 								<div class="article_wrap">
 									<div class="article">
 										<div class="article_appoint">
-											<a href="#"><img src="img/main/article/coffee-cup.svg" alt=""></a>
-											<a href="#"><img src="img/main/article/plate.svg" alt=""></a>
+											<a href="#"><img src="img/main/article/coffee-cup.svg" alt="">
+												<span class="article_popup article_popup_cofee">Для кофемашин</span>
+											</a>
+											<a href="#"><img src="img/main/article/plate.svg" alt="">
+												<span class="article_popup article_popup_dishwasher">Для посудомоечных машин</span>
+											</a>
 										</div>
 										<div class="article_img">
 											<img src="img/main/article/article1.png" alt="">
@@ -811,8 +821,46 @@
 			</div>
 		</div>
 	</div>
+	<div class="popup_filter_wrap display_none">
+		<div class="popup_filter">
+			<div class="popup_filter_exit">&times;</div>
+			<div class="popup_filter_caption">
+				<div class="popup_filter_caption_img">
+					<img src="img/popup/Vector.svg" alt="">
+				</div>
+				<div class="popup_filter_caption_text">
+					<h1>Подберите систему фильтрации</h1>
+				</div>
+				<div class="popup_select">
+					<form action="#">
+						<div class="select_container">
+							<select class="select" name="name">
+								<option value="ПрименениЕ 1">Применение 1</option>
+								<option value="ПрименениЕ 2">Применение 2</option>
+								<option value="ПрименениЕ 3">Применение 3</option>
+								<option value="ПрименениЕ 1">Применение 1</option>
+								<option value="ПрименениЕ 2">Применение 2</option>
+								<option value="ПрименениЕ 3">Применение 3</option>
+								<option value="ПрименениЕ 1">Применение 1</option>
+								<option value="ПрименениЕ 2">Применение 2</option>
+								<option value="ПрименениЕ 3">Применение 3</option>
+								<option value="ПрименениЕ 1">Применение 1</option>
+								<option value="ПрименениЕ 2">Применение 2</option>
+								<option value="ПрименениЕ 3">Применение 3</option>
+							</select>
+						</div>
+						<input class="popup_filter_consumption" type="number" placeholder="Недельный расход воды                   Л">
+						<input class="popup_filter_hardness" type="number" placeholder="Карбонатная жесткость                  КН">
+						<input class="popup_select_button button header_content_button_filter" type="submit" value="Показать варианты">
+					</form>	
+				</div>
+			</div>
+		</div>
+	</div>
 	
-	<script type="text/javascript" src="./plugins/jquery/dist/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./plugins/select/jquery.selectBoxIt.min.js"></script>
 	<script type="text/javascript" src="./plugins/mask/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="./plugins/slick/slick.min.js"></script>
 	<script type="text/javascript" src="./main.js"></script>
